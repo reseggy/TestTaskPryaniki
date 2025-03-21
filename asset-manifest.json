@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/TestTaskPryaniki/static/js/main.c412e29f.js",
+    "main.js": "/TestTaskPryaniki/static/js/main.4045828e.js",
     "index.html": "/TestTaskPryaniki/index.html",
-    "main.c412e29f.js.map": "/TestTaskPryaniki/static/js/main.c412e29f.js.map"
+    "main.4045828e.js.map": "/TestTaskPryaniki/static/js/main.4045828e.js.map"
   },
   "entrypoints": [
-    "static/js/main.c412e29f.js"
+    "static/js/main.4045828e.js"
   ]
 }
