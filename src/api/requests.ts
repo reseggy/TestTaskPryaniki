@@ -35,9 +35,7 @@ export const getTableData = async () => {
 
     return response.data;
   } catch (error: unknown) {
-    throw new Error(
-      (error as any)?.response?.data?.message || "Ошибка получения данных"
-    );
+    throw new Error(getErrorMessage(error) || "Ошибка получения данных");
   }
 };
 
@@ -59,9 +57,7 @@ export const createRecord = async (record: {
 
     return response.data;
   } catch (error: unknown) {
-    throw new Error(
-      (error as any)?.response?.data?.message || "Ошибка создания записи"
-    );
+    throw new Error(getErrorMessage(error) || "Ошибка создания записи");
   }
 };
 
@@ -73,9 +69,7 @@ export const deleteRecord = async (id: string) => {
 
     return response.data;
   } catch (error: unknown) {
-    throw new Error(
-      (error as any)?.response?.data?.message || "Ошибка удаления записи"
-    );
+    throw new Error(getErrorMessage(error) || "Ошибка удаления записи");
   }
 };
 
@@ -101,8 +95,6 @@ export const updateRecord = async (
 
     return response.data;
   } catch (error: unknown) {
-    throw new Error(
-      (error as any)?.response?.data?.message || "Ошибка редактирования записи"
-    );
+    throw new Error(getErrorMessage(error) || "Ошибка редактирования записи");
   }
 };
